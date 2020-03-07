@@ -5,13 +5,13 @@
             <h1 class="display-4">LES VARIABLES PHP :</h1>
             <p class="lead">Les variables nous servent à stocker des informations à un moment précis dans le code.</p>
             <hr class="my-4">
-            <h3>Par exemple :</h3>
+            <h4>Par exemple :</h4>
             <h5>Je veux stocker les informations de Rick qui est scientifique, il a 70 ans, Summers et Morty sont ses petits-enfants, il est à la retraite.</h5>
             <div>
-                <div class="my-5">
+                <div class="my-5" id="nommage"> 
                     <p>On utilise le caractère <strong> $ </strong> pour initialiser une variable et le signe <strong> = </strong> pour assigner une valeur.</p>
                     <p>
-                        Il existe une convention internationale pour nommer les variables : <br>
+                        Il existe des <strong><u>conventions internationales</u></strong> pour nommer les variables : <br>
                         - La premiere lettre du nom de la variable est toujours en minuscule <br>
                         - On nomme le nom des variables toujours en anglais <br>
                         - On utilise le <a href="https://wprock.fr/blog/conventions-nommage-programmation/#Conventions-Le-Camel-case" target="_blank">camelCase</a>, c'est à dire que les mots sont liés sans espace. Chaque mot commence par une majuscule à l’exception du premier.
@@ -19,7 +19,7 @@
                 </div>
                 <div class="my-5">
                     <p>
-                        Il existe différents types de variables : STRING, INTEGER, BOOLEAN, ARRAY..., <a href="https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/type-donnee/" target="_blank">Voir tous les types de variables ICI</a> <br>
+                        Il existe <strong><u>différents types de variables : STRING, INTEGER, BOOLEAN, ARRAY...</u></strong>, <a href="https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/type-donnee/" target="_blank">Voir tous les types de variables ICI</a> <br>
                         En PHP, le typage des variables est dynamique, cela veut dire que l'on n'a pas besoin de présiser le type de la variable que l'on écrit, PHP typera lui-même la variable grâce à la synthaxe : <br>
                     </p>
                     <p>
@@ -40,11 +40,11 @@
                     </p>
                     <h5>Exercices :</h5>
                     <p>
-                        - cloner le projet -> créer une branche en la nommant par ton prénom
-                        - ouvrir le projet en entier dans un IDE
-                        - lancer le projet sur le serveur local
-                        - lire la homepage
-                        - faire les exercices de la page exercices en suivant les consignes
+                        - cloner le projet -> créer une branche en la nommant par ton prénom <br>
+                        - ouvrir le projet en entier dans un IDE <br>
+                        - lancer le projet sur le serveur local <br>
+                        - lire la homepage <br>
+                        - faire les exercices de la page exercices en suivant les consignes <br>
                     </p>
                 </div>
             </div>
