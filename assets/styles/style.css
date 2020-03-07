@@ -1,0 +1,15 @@
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.list {
+    list-style:none;
+}
+
+.iframe {
+    width: 600px;
+    height: 300px;
+}
