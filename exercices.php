@@ -1,6 +1,19 @@
 <?php include('head.php'); ?>
 
-<div class="container">
+<div class="dropdown" id="menu">
+    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-chevron-circle-down"></i>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#1">Nommer les variables</a>
+        <a class="dropdown-item" href="#2">Assigner les valeurs / Afficher le résultat des variables</a>
+        <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
+        <a class="dropdown-item" href="#4">Conquaténer les variables</a>
+        <a class="dropdown-item" href="#bonus">Bonus</a>
+        <a class="dropdown-item" href="#push">Pusher mon code</a>
+    </div>
+</div>
+<div class="container my-container">
     <div class="jumbotron">
         <h2 class="display-4">💻 Exercices :</h2>
         <hr class="my-4">
@@ -69,8 +82,11 @@
                 </ol>
             </p>
         </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <hr class="my-4">
-        <!-- 1ere ETAPE -->
+        <!-- 2eme ETAPE -->
         <div class="col-12" id="2">
             <p>
                 Deuxième étape, assigne les valeurs aux variables puis affiche les : <br>
@@ -87,8 +103,8 @@
                         <code>echo "=> " .$name .'&lt;br&gt;';</code> <br>
                         <!-- EXEMPLE -->
                         <?php
-                            $name = "Rick";
-                            echo "=> " . $name . '<br>';
+                        $name = "Rick";
+                        echo "=> " . $name . '<br>';
                         ?>
                         <!-- / -->
                     </div>
@@ -100,7 +116,11 @@
                 ?>
             </p>
         </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <hr class="my-4">
+        <!-- 3ème ETAPE -->
         <div class="col-12" id="3">
             <p>
                 Troisième étape, utilise la méthode <code>gettype($maVariable);</code> pour vérifier le typage de tes variables :<br>
@@ -150,40 +170,44 @@
                      EN AJOUTANT TOI MÊME LES BALISES PHP -->
                 </p>
             </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </div>
         <hr class="my-4">
-        <div class="col-12" id="5">
+        <!-- 4ème ETAPE -->
+        <div class="col-12" id="4">
             Dernère étape, conquatène les variables entre elles afin d'afficher le texte suivant : <br>
             <div class="font-italic my-3">
-                Le <strong><u>larbin*</u></strong> est une invention de Rick. <br> 
-                Les couleurs disponibles sont : <strong><u>Bleu*, Rouge*, Vert*, Jaune*, Violet - (série limitée)* </u></strong>. <br> 
-                Vit environ <strong><u>48*</u></strong> heures. <br> 
+                Le <strong><u>larbin*</u></strong> est une invention de Rick. <br>
+                Les couleurs disponibles sont : <strong><u>Bleu*, Rouge*, Vert*, Jaune*, Violet - (série limitée)* </u></strong>. <br>
+                Vit environ <strong><u>48*</u></strong> heures. <br>
                 <strong><u>S'évapore une fois qu'il a réalisé ton souhait*</u></strong>. <br>
                 <strong><u>1*</u></strong> souhait par larbin.
                 Photo non contractuelle.
-            </div> 
+            </div>
             <small>
                 <div class="alert alert-primary" role="alert">
                     <strong>Exemple :</strong><br>
                     <code>
-                        $name = "Jenny";<br>
-                        $job = "développeuse";
+                        $name = "Rick";<br>
+                        $job = "scientifique";
                     </code>
                     <br>
                     <code>echo "Hello je suis ".$name." et je suis ".$job.".";</code> <br> => <br>
                     <!-- EXEMPLE -->
-                    <?php 
-                        $name = "Jenny";
-                        $job = "développeuse";
-                        echo "Hello je suis ".$name." et je suis ".$job."."; 
+                    <?php
+                        $name = "Rick";
+                        $job = "scientifique";
+                        echo "Salut je suis " . $name . " et je suis " . $job . ".";
                     ?>
                     <!-- / -->
                     <br>
                 </div>
             </small>
             <p>
-                <p> 
-                <!-- ICI TON CODE POUR AFFICHER LE TEXTE : 
+                <p>
+                    <!-- ICI TON CODE POUR AFFICHER LE TEXTE : 
 
                     Le larbin est une invention de Rick.
                     Les couleurs disponibles sont : Bleu, Rouge, Vert, Jaune, Violet - (série limitée).
@@ -197,8 +221,12 @@
                 </p>
             </p>
         </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
-    <div class="jumbotron bg-dark text-light">
+    <!-- BONUS -->
+    <div class="jumbotron bg-dark text-light" id="bonus">
         <h2 class="display-4">😎 Bonus :</h2>
         <hr class="my-4">
         <div class="row">
@@ -207,30 +235,50 @@
             </div>
             <div class="col-lg-8 col-sm-12 my-5">
                 <p class="lead">
-                    J'ai caché un personnage dans le code, à toi de jouer pour trouver comment l'afficher : 
+                    J'ai caché un personnage dans le code, à toi de jouer pour trouver comment l'afficher :
                 </p>
                 <small>
                     <div class="alert alert-primary" role="alert">
                         <strong>Tips :</strong><br>
-                            - Le personnage caché ne s'affichera que si la variable <code>$secretIsVisible</code> est réiniatlisée à <code>true</code> <br>
-                            - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans index et exercices <br>
+                        - Le personnage caché ne s'affichera que si la variable <code>$secretIsVisible</code> est réiniatlisée à <code>true</code> <br>
+                        - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans <code>index.php</code> et <code>exercices.php</code> <br>
                         <p class="my-3">
-                            <?php 
-                                if($secretIsVisible === false) {
-                                    echo "👻";
-                                }
+                            <?php
+                            if ($secretIsVisible === false) {
+                                echo "👻";
+                            }
                             ?>
-                        </p>                    
+                        </p>
                     </div>
                 </small>
 
                 <?php
-                    //TROUVE COMMENT AFFICHER LE PERSONNAGE CACHE
-
-                    
-                    
+                    // TROUVE COMMENT AFFICHER LE PERSONNAGE CACHE
                 ?>
 
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div class="jumbotron" id="push">
+        <h2 class="display-4">➜ ✅ : git push</h2>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-12 my-5">
+                <h4> Dans ton terminal : <h4>
+                    <code class="git">
+                        ➜  git:(nom_de_ta_branche) ✗ git add &lt;les fichiers modifiés&gt; <br>
+                        ➜  git:(nom_de_ta_branche) ✗ git commit -m "ton message de commit" <br>
+                        ➜  git:(nom_de_ta_branche) git push --set-upstream origin nom_de_ta_branche <br>
+                    </code>
+                </h4>
+            </div>
+            <div class="col-12">
+                <div class="text-center my-4">
+                    <img src="assets/images/tenor.gif" alt="thanks noob noob" class="tenor">
+                </div>
             </div>
         </div>
     </div>

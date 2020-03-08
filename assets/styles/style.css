@@ -1,8 +1,20 @@
+body{
+    z-index: 0;
+}
+
+.my-container {
+    margin-top: 120px;
+}
+
 .avatar {
     vertical-align: middle;
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+.bg-grey {
+    background-color: #e9ecef;
 }
 
 .list {
@@ -12,4 +24,32 @@
 .iframe {
     width: 600px;
     height: 300px;
+}
+
+.git {
+    font-size: 15px;
+}
+
+#menu {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+}
+
+@media screen and (max-width: 850px) {
+    .tenor {
+        width: 370px;
+        height: 200px;
+    }
+    #menu {
+        position: fixed;
+        z-index: 1;
+        left: 3%;
+        top: 11%;
+        width: 8em;
+        margin-top: -2.5em;
+    }
 }
