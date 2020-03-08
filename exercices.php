@@ -40,15 +40,13 @@ pour te deplacer plus facilement sans te perdre
                     - Signe particulier -> S'évapore une fois qu'il a réalisé ton souhait
                 </p>
             </div>
-            <div class="col-12">
-                Pour cela on va donc utiliser les variables :
-            </div>
         </div>
         <hr class="my-4">
         <!-- 1ere ETAPE -->
         <div class="col-12" id="1">
+        <h4 class="display-5">Nommer les variables :</h4>
             <p>
-                Première étape, nomme les variables dont on a besoin pour stocker toutes les informations d Monsieur Larbin : <br>
+                Première étape, nomme les variables dont on a besoin pour stocker toutes les informations de Monsieur Larbin : <br>
                 <small>
                     <div class="alert alert-primary" role="alert">
                         Exemple : <br>
@@ -86,6 +84,7 @@ pour te deplacer plus facilement sans te perdre
         <hr class="my-4">
         <!-- 2eme ETAPE -->
         <div class="col-12" id="2">
+        <h4 class="display-5">Assigner des valeurs :</h4>
             <p>
                 Deuxième étape, assigne les valeurs aux variables puis affiche les : <br>
                 <small>
@@ -122,6 +121,7 @@ pour te deplacer plus facilement sans te perdre
         <hr class="my-4">
         <!-- 3ème ETAPE -->
         <div class="col-12" id="3">
+        <h4 class="display-5">Vérifier le type des variables :</h4>
             <p>
                 Troisième étape, utilise la méthode <code>gettype($maVariable);</code> pour vérifier le typage de tes variables :<br>
                 <small>
@@ -177,6 +177,7 @@ pour te deplacer plus facilement sans te perdre
         <hr class="my-4">
         <!-- 4ème ETAPE -->
         <div class="col-12" id="4">
+        <h4 class="display-5">Concaténer les variables :</h4>
             Dernière étape, concatène les variables entre elles afin d'afficher le texte suivant : <br>
             <div class="font-italic my-3">
                 Le <strong><u>larbin*</u></strong> est une invention de Rick. <br>
