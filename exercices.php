@@ -273,23 +273,23 @@ pour te deplacer plus facilement sans te perdre
             </small>
             <p>
                 <p>
-                    Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
+                    - Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
                     <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
+                    - Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
                     <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
+                    - Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
                     <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer et 5 à sa filles, combien lui en restera-t-il ? (tips : utilise le modulo) <br>
+                    - Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer et 5 à sa fille, le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo) <br>
                     <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    Bonus : Rick voudrait écrire un script qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, comment faire ? <br>
+                    - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, comment faire ? <br>
                     <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
