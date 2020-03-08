@@ -25,10 +25,12 @@
     <meta name="theme-color" content="#ffffff">
     <title>PHP - Variables</title>
     <script src="https://kit.fontawesome.com/12c728ad22.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
+    <?php $secretIsVisible = false; ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-grey fixed-top">
         <a class="navbar-brand" href="index.php">PHP Basics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

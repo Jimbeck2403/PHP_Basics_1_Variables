@@ -1,6 +1,6 @@
 <!----------------------------------------------------------------------------------------------- 
 Pour te repérer dans cette page de code, tu peux faire une recherche des mots clés 
-ETAPE, BONUS, PUSH, EXEMPLE, ICI TON CODE
+ETAPE_1, ETAPE_2, ETAPE_3, ETAPE_4, ETAPE_5, _SUPERBONUS, _PUSH, _EXEMPLE, _ICI TON CODE
 afin de te deplacer plus facilement sans te perdre 
 ------------------------------------------------------------------------------------------------->
 
@@ -11,17 +11,20 @@ afin de te deplacer plus facilement sans te perdre
         <i class="fas fa-chevron-circle-down"></i>
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#1">Nommer les variables</a>
-        <a class="dropdown-item" href="#2">Assigner les valeurs / Afficher le résultat des variables</a>
-        <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
-        <a class="dropdown-item" href="#4">Concaténer les variables</a>
-        <a class="dropdown-item" href="#5">Faire des opérations</a>
-        <a class="dropdown-item" href="#bonus">Bonus</a>
-        <a class="dropdown-item" href="#push">Pusher mon code</a>
+        <a class="dropdown-item" href="#ETAPE_1">Nommer les variables</a>
+        <a class="dropdown-item" href="#ETAPE_2">Assigner les valeurs / Afficher le résultat des variables</a>
+        <a class="dropdown-item" href="#ETAPE_3">Vérifier le type des variables</a>
+        <a class="dropdown-item" href="#ETAPE_4">Concaténer les variables</a>
+        <a class="dropdown-item" href="#ETAPE_5">Faire des opérations</a>
+        <a class="dropdown-item" href="#_SUPERBONUS">SUPERBONUS</a>
+        <a class="dropdown-item" href="#_PUSH">Pusher mon code</a>
     </div>
 </div>
 <div class="container my-container">
     <div class="jumbotron">
+        <div class="text-right">
+            <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Tous les exercices sont commentés, tu peux d'ors et déjà lire les premiers commentaires à la ligne 1 de exercices.php. Tu as tout ce qu'il faut dans le contenu de ce projet pour réaliser et réussir les exercies. Si tu es bloqué.e, inspire toi du code déjà présent et réadapte le à ton besoin." >Comments in code</button>
+        </div>
         <h2 class="display-4">💻 Exercices :</h2>
         <hr class="my-4">
         <div class="row">
@@ -43,8 +46,10 @@ afin de te deplacer plus facilement sans te perdre
             </div>
         </div>
         <hr class="my-4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
         <!-- 1ere ETAPE -->
-        <div class="col-12" id="1">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <div class="col-12" id="ETAPE_1">
         <h4 class="display-5">Nommer les variables :</h4>
             <p>
                 Première étape, nomme les variables dont on a besoin pour stocker toutes les informations de Monsieur Larbin : <br>
@@ -77,14 +82,16 @@ afin de te deplacer plus facilement sans te perdre
                         <code>$<!-- NOM VARIABLE --></code>
                     </li>
                 </ol>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </p>
         </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
         <hr class="my-4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
         <!-- 2eme ETAPE -->
-        <div class="col-12" id="2">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <div class="col-12" id="ETAPE_2">
         <h4 class="display-5">Assigner des valeurs :</h4>
             <p>
                 Deuxième étape, assigne les valeurs aux variables puis affiche les : <br>
@@ -94,34 +101,51 @@ afin de te deplacer plus facilement sans te perdre
                         - Il y a 2 string, 2 integer, 1 array, 1 float, 1 boolean. <br>
                         - Fais attention à la synthaxe afin que le typage dynamique soit correct. <br>
                         - Pour afficher les valeurs d'un ARRAY tu peux utiliser <code>&lt;pre&gt;&lt;?php Print_r($array); ?&gt;&lt;\pre&gt;</code> afin d'avoir un affichage plus friendly. <br>
-                        - N'oublie pas les points virgules ; 🤙
+                        - N'oublie pas les points virgules ; 🤙 <br>
+                        - Il se peut que tu aies besoin d'échapper des caractères spéciaux tel que l'aposthrophe ', oui bien de faire un retour à la ligne, en PHP c'est très simple : <br> 
+                        Pour la chaîne de caractères suivante : 
+                        <code>
+                            "J'aime coder des mystères &lt;retour à la ligne&gt; parfois même des choses impossibles"
+                        </code>
+                        <br>
+                        Suivant que j'initialise ma variable avec des "" ou bien des '', PHP ne va pas interprété les choses de la même manière : <br>
+                        Je peux écrire : <code>$string = "J'aime coder des choses mystères &lt;br&gt; parfois même des choses impossibles";</code> <br>
+                        ou <code>$string = 'j\'aime coder des choses mystères &lt;br&gt; parfois même des choses impossibles';</code> <br>
+                        Le \ me permet d'échapper le caractère ' et le &lt;br&gt; de faire le retour à la ligne.
                         <hr class="my-2">
                         <strong>Exemple :</strong><br>
                         <code>$name = "Rick";</code> <br>
                         <code>echo "=> " .$name .'&lt;br&gt;';</code> <br>
-                        <!-- EXEMPLE -->
-                        <?php
-                            $name = "Rick";
-                            echo "=> " . $name . '<br>';
-                        ?>
+                        <!-- _EXEMPLE -->
+                        <div class="alert alert-my-dark" role="alert">
+                            <?php
+                                $name = "Rick";
+                                echo "<span class='red'>~</span> " .$name . '<br>';
+                            ?>
+                        </div>
                         <!-- / -->
                     </div>
                 </small>
                 <br>
-                <?php
-                // ICI TON CODE 
-                // <!-- REPRENDS LE NOM DE TES VARIABLES ET ASSIGNE LEUR LES VALEURS DE MONSIEUR LARBIN :-->
-                // ------------  Aide toi de l'exemple juste au dessus 🤙 ------------>
-                // ------------  N'oublie pas le point virgule ; 🤙 ------------>
-                ?>
+                <div class="alert alert-my-dark" role="alert">
+                    <?php
+                        echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                        // _ICI TON CODE 
+                        // <!-- REPRENDS LE NOM DE TES VARIABLES ET ASSIGNE LEUR LES VALEURS DE MONSIEUR LARBIN :-->
+                        // ------------  Aide toi de l'exemple juste au dessus 🤙 ------------>
+                        // ------------  N'oublie pas le point virgule ; 🤙 ------------>
+                    ?>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </p>
         </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
         <hr class="my-4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
         <!-- 3ème ETAPE -->
-        <div class="col-12" id="3">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <div class="col-12" id="ETAPE_3">
         <h4 class="display-5">Vérifier le type des variables :</h4>
             <p>
                 Troisième étape, utilise la méthode <code>gettype($maVariable);</code> pour vérifier le typage de tes variables :<br>
@@ -129,55 +153,87 @@ afin de te deplacer plus facilement sans te perdre
                     <div class="alert alert-primary" role="alert">
                         <strong>Exemple :</strong><br>
                         <code>echo gettype($name);</code> <br> => <br>
-                        <!-- EXEMPLE -->
-                        <?php echo gettype($name); ?><br>
+                        <!-- _EXEMPLE -->
+                        <div class="alert alert-my-dark" role="alert">
+                            <?php echo "<span class='red'>~</span> " .gettype($name); ?><br>
+                        </div>
                         <!-- / -->
                     </div>
                 </small>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <?php
-                    // ICI TON CODE POUR VERIFIER LE TYPAGE DE LA PREMIERE VARIABLE
-                    ?>
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE TA PREMIERE VARIABLE
+                            // ------------  N'oublie pas le point virgule ; 🤙 ------------>
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE SUIVANTE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE SUIVANTE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE SUIVANTE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE SUIVANTE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE SUIVANTE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
-                    <!-- ICI TON CODE POUR VERIFIER LE TYPAGE DE LA VARIABLE
-                     EN AJOUTANT TOI MÊME LES BALISES PHP -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
+                        ?>
+                    </div>
                 </p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
         </div>
         <hr class="my-4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
         <!-- 4ème ETAPE -->
-        <div class="col-12" id="4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <div class="col-12" id="ETAPE_4">
         <h4 class="display-5">Concaténer les variables :</h4>
             Quatrième étape, concatène les variables entre elles afin d'afficher le texte suivant : <br>
             <div class="font-italic my-3">
@@ -192,13 +248,18 @@ afin de te deplacer plus facilement sans te perdre
                 <div class="alert alert-primary" role="alert">
                 <strong>Tips :</strong><br>
                     Le terme concaténer veut dire que l'on associe les variables entre elles. Par exemple : <br>
-                    J'ai 2 varibales : $direBonjour = "Hello" et $destination = "World". <br>
+                    J'ai 2 varibales : $sayHello = "Hello" et $destination = "World". <br>
                     Je souhaite associer les 2 variables pour afficher "Hello World", pour cela je vais utilser la concaténation. <br>
                     En PHP, il suffit de placer un point '.' devant la variable à associer : <br>
-                    <code>echo .$direBonjour .$destination;</code> <br> => <br> 
-                    <?php echo $direBonjour = "Hello" .$destination = "World"; ?> <br>
-                    Sauf que mes mots sont collés alors je concatène un espace entre les 2 comme ceci : <br> <code>echo .$direBonjour ." " .$destination;</code> <br> => <br>
-                    <?php echo $direBonjour = "Hello" ." " .$destination = "World"; ?>  <br>
+                    <code>echo .$sayHello .$destination;</code> <br> => <br> 
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php echo "<span class='red'>~</span> " .$sayHello = "Hello" .$destination = "World"; ?> <br>
+                    </div>
+                    <hr>
+                    Sauf que mes mots sont collés alors je concatène un espace entre les 2 comme ceci : <br> <code>echo .$sayHello ." " .$destination;</code> <br> => <br>
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php echo "<span class='red'>~</span> " .$sayHello = "Hello" ." " .$destination = "World"; ?>  <br>
+                    </div>
                     <hr class="my-2">
                     <strong>Exemple :</strong><br>
                     <code>
@@ -207,38 +268,46 @@ afin de te deplacer plus facilement sans te perdre
                     </code>
                     <br>
                     <code>echo "Hello je suis ".$name." et je suis ".$job.".";</code> <br> => <br>
-                    <!-- EXEMPLE -->
-                    <?php
-                        $name = "Rick";
-                        $job = "scientifique";
-                        echo "Salut je suis " .$name ." et je suis " .$job .".";
-                    ?>
+                    <!-- _EXEMPLE -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <?php
+                            $name = "Rick";
+                            $job = "scientifique";
+                            echo "<span class='red'>~</span> Salut je suis ".$name." et je suis ".$job .".";
+                        ?>
+                    </div>
                     <!-- / -->
                     <br>
                 </div>
             </small>
             <p>
                 <p>
-                    <!-- ICI TON CODE POUR AFFICHER LE TEXTE : 
+                    <div class="alert alert-my-dark" role="alert" id="4_Etape">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 4_Etape">Comments in code</button>
+                        <!-- _ICI TON CODE POUR AFFICHER LE TEXTE : 
+                            "   Le larbin est une invention de Rick.
+                                Les couleurs disponibles sont : Bleu, Rouge, Vert, Jaune, Violet - (série limitée).
+                                Vit environ 48 heures.
+                                S'évapore une fois qu'il a réalisé ton souhait.
+                                1 souhait par larbin.
+                                Photo non contractuelle**. "
 
-                    Le larbin est une invention de Rick.
-                    Les couleurs disponibles sont : Bleu, Rouge, Vert, Jaune, Violet - (série limitée).
-                    Vit environ 48 heures.
-                    S'évapore une fois qu'il a réalisé ton souhait.
-                    1 souhait par larbin.
-                    Photo non contractuelle**.
-                    
-                    ** N'oublie pas de mettre ton code dans des balises PHP 🤙           
-                -->
+                            ** N'oublie pas de mettre ton code dans des balises PHP 🤙
+                            ** N'oublie pas les points virgules ; 🤙           
+                        --> 
+                        <span class='red'>~</span> _ICI TON CODE PHP
+                    </div>
                 </p>
             </p>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </div>
         <hr class="my-4">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
         <!-- 5ème ETAPE -->
-        <div class="col-12" id="5">
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <div class="col-12" id="ETAPE_5">
         <h4 class="display-5">Faire des opérations :</h4>
             Cinquième étape, on va aider Rick à chiffrer sa production de larbins : <br>
             <small>
@@ -260,12 +329,15 @@ afin de te deplacer plus facilement sans te perdre
                         $total = 60000; <br>
                         $larbins = 24 <br>
                         echo $total / $larbins ." $"; <br> => <br>
-                        <!-- EXEMPLE -->
-                        <?php 
-                            $total = 60000;
-                            $larbins = 24;
-                            echo $total / $larbins ." $";
-                        ?>
+                        <!-- _EXEMPLE -->
+                        <div class="alert alert-my-dark" role="alert">
+                        <span class='red'>~</span>
+                            <?php 
+                                $total = 60000;
+                                $larbins = 24;
+                                echo $total / $larbins ." $";
+                            ?>
+                        </div>
                         <!-- / -->
                     </code>
                     <br>
@@ -274,47 +346,65 @@ afin de te deplacer plus facilement sans te perdre
             <p>
                 <p>
                     - Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
-                    <!-- ICI TON CODE --> 
-                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <span class='red'>~</span> _ICI TON CODE PHP
+                        <!-- _ICI TON CODE --> 
+                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    </div>
                     <br>
                     - Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
-                    <!-- ICI TON CODE --> 
-                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <span class='red'>~</span> _ICI TON CODE PHP
+                        <!-- _ICI TON CODE --> 
+                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    </div>
                     <br>
                     - Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
-                    <!-- ICI TON CODE --> 
-                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <span class='red'>~</span> _ICI TON CODE PHP
+                        <!-- _ICI TON CODE --> 
+                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    </div>
                     <br>
                     - Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer, 5 à sa fille et le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo) <br>
-                    <!-- ICI TON CODE --> 
-                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <div class="alert alert-my-dark" role="alert">
+                        <span class='red'>~</span> _ICI TON CODE PHP
+                        <!-- _ICI TON CODE --> 
+                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    </div>
                     <br>
                     - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :<br>
-                    <?php 
-                        // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
-                        // 1 - On initialise une variable $number avec une valeur inférieur ou égale à 15, par exemple on peut tester avec 12.
-                        $number = 12;
-                        // 2 - On ecrit la fonction à laquelle on donne un nom intelligible sur ce qu'elle fait, 
-                        // cette méthode prend comme paramètre un nombre qui sera tester : $number
-                        function getAlertStock($number)
-                        {
-                            // <!-- ICI TON CODE --> 
-                            // Tu peux décommenter la ligne du dessous pour actionner la méthode 
-                            // echo "Actuellement " .$number ." de larbins en stock"; 
-                        }
-                        // 3 - On appelle la méthode pour voir ce qu'elle renvoit comme résultat
-                        getAlertStock($number);
-                    ?>
+                    <div class="alert alert-my-dark" role="alert" id="5_Etape">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape">Comments in code</button>
+                        <span class='red'>~</span> _ICI TON CODE PHP <br>
+                        <?php 
+                            // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
+                            // 1 - On initialise une variable $number avec une valeur inférieur ou égale à 15, par exemple on peut tester avec 12.
+                            $number = 12;
+                            // 2 - On ecrit la fonction à laquelle on donne un nom intelligible sur ce qu'elle fait, 
+                            // cette méthode prend comme paramètre un nombre qui sera tester : $number
+                            function getAlertStock($number)
+                            {
+                                // <!-- _ICI TON CODE --> 
+                                // Tu peux décommenter la ligne du dessous pour actionner la méthode 
+                                // echo "Actuellement " .$number ." de larbins en stock"; 
+                            }
+                            // 3 - On appelle la méthode pour voir ce qu'elle renvoit comme résultat
+                            getAlertStock($number);
+                        ?>  
+                    </div>
                     <br>
                 </p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </p>
         </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
     </div>
-    <!-- BONUS -->
-    <div class="jumbotron bg-dark text-light" id="bonus">
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- SUPER BONUS -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <div class="jumbotron bg-dark text-light" id="SUPERBONUS">
         <h2 class="display-4">😎 Bonus :</h2>
         <hr class="my-4">
         <div class="row">
@@ -335,32 +425,57 @@ afin de te deplacer plus facilement sans te perdre
                 </small>
             </div>
             <div class="col-12">
-                <?php
-                    if ($secretIsVisible === false) {
-                        echo "👻";
-                    }
-                    // ICI TON CODE
-                    // TROUVE COMMENT AFFICHER LE PERSONNAGE CACHE
-                ?>
+                <div class="alert alert-my-dark" role="alert" id="_SUPERBONUS">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Code commenter dans exercices.php mot clé : SUPERBONUS">Comments in code</button>
+                    <?php
+                        // _SUPERBONUS
+                        // Dans un premier temps, testons si la variable $secretIsVisible existe :
+                        // Lorsque je met un ! avant la variable je demande l'inverse de l'état de ma variable 🤯 
+                        // 😬 JE M'EXPLIQUE 
+                        // => Si j'écris if($secretVisible) je demande si secretVisible existe, ou bien qu'elle est égale à true
+                        // => En revanche, si je demande l'inverse de true, c'est à dire false, alors je demande si secretVisible
+                        // n'existe pas, ou qu'elle est égale à false. Pour cela j'ajoute un ! devant ma variable.
+                        // Entraine toi à comprendre cette logique avec l'exemple juste en dessous qui demande :
+                        // "Si (secretVisible n'existe pas et/ou qu'elle est égale à false){
+                        //    affiche 👻      
+                        //  } Sinon {
+                        //    affiche la valeur de secretVisible
+                        //  }"
+                        if (!$secretIsVisible) {
+                            echo "<span class='red'>~</span> 👻";
+                        } else {
+                            echo $secretIsVisible;
+                        }
+                        // Dans un second temps regarde ce qu'il se passe dans le code et les fichiers.
+                        // Certains fichiers tels que head.php et footer.php sont appart mais apparaissent correctement sur toutes
+                        // les pages readme / home / exercies
+                        // Essaye de comprendre comment ça fonctionne tout en observant les fichiers contenu à la racine du projet
+                        // qui pourraient te permettre de retrouver où se trouve le personnage caché et comment l'afficher
+                        // Tips => Rappelle toi du sens de lecture du code : toujours de haut en bas 
+
+                        // _ICI TON CODE
+                    ?>
+                </div>
             </div>
         </div>
         <div class="progress">
             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
-    <!-- PUSH -->
-    <div class="jumbotron" id="push">
-        <h2 class="display-4">➜ ✅ : git push</h2>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- _PUSH -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <div class="jumbotron" id="_PUSH">
+        <h2 class="display-4"><span class='red'>~</span> git push</h2>
         <hr class="my-4">
         <div class="row">
             <div class="col-12 my-5">
                 <h4> Dans ton terminal : <h4>
-                    <code class="git">
-                        ➜  git:(nom_de_ta_branche) ✗ git add &lt;les fichiers modifiés&gt; <br>
-                        ➜  git:(nom_de_ta_branche) ✗ git commit -m "ton message de commit" <br>
-                        ➜  git:(nom_de_ta_branche) git push --set-upstream origin nom_de_ta_branche <br>
-                    </code>
-                </h4>
+                <div class="alert alert-my-dark" role="alert">
+                    <span class="red">~ </span><span class="purple">git:(</span><span class="red">nom_de_ta_branche</span><span class="purple">)</span> <span class="yellow">✗</span> git add &lt;les fichiers modifiés&gt; <br>
+                    <span class="red">~ </span><span class="purple">git:(</span><span class="red">nom_de_ta_branche</span><span class="purple">)</span> <span class="yellow">✗</span> git commit -m "ton message de commit" <br>
+                    <span class="red">~ </span><span class="purple">git:(</span><span class="red">nom_de_ta_branche</span><span class="purple">)</span> git push --set-upstream origin nom_de_ta_branche <br>
+                </div>
             </div>
             <div class="col-12">
                 <div class="text-center my-4">

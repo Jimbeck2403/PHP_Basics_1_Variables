@@ -1,5 +1,4 @@
 <?php 
-    $secretIsVisible = false;
     $secretName = "Pickle Rick";
     $secretPowers = ["Pickle power", "Rat power", "Smarter than the rest of the world"];
     $secretImage = 'assets/images/tenor.gif';
@@ -7,7 +6,7 @@
 
     if ($secretIsVisible === true) {
 ?>
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-my-dark" role="alert">
             <h4 class="alert-heading">Well done Wilder !</h4>
         </div>
         <div class="card">

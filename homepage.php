@@ -58,21 +58,27 @@
                     <li><code>$littleChildrens = ["Summer","Morty"];</code></li>
                     <li><code>$isRetired = true;</code></li>
                 </ul>
-                <!-- J'assigne une valeur à chaque variable : -->
-                <?php
-                $name = "Rick";
-                $age = 70;
-                $job = "scientifique";
-                $littleChildrens = ["Summer", "Morty"];
-                $isRetired = true;
-                ?>
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _PHP" >Comments in code</button>
+                </div>
+                <!-- ICI => J'assigne une valeur à chaque variable : -->
+                <div id="_PHP">
+                    <?php
+                        $name = "Rick";
+                        $age = 70;
+                        $job = "scientifique";
+                        $littleChildrens = ["Summer", "Morty"];
+                        $isRetired = true;
+                    ?>
+                </div>
             </p>
         </section>
         <hr class="my-4">
-        <section id="3">
+        <section id="3" class="_TYPE">
             <h3>3 - Vérifier le type des variables</h3>
             <p>
                 Pour vérifier le typage dynamique des variables je peux utiliser la méthode <code>gettype($maVariable);</code> :<br>
+                <!-- ICI => J'utilise la méthode gettype() pour afficher le type de mes variables et echo pour afficher le résulat -->
                 <p>
                     <code>echo gettype($name);</code> <br> => <br>
                     <?php echo gettype($name); ?>
@@ -93,14 +99,17 @@
                     <code>echo gettype($isRetired);</code> <br> => <br>
                     <?php echo gettype($isRetired); ?>
                 </p>
-    
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _TYPE" >Comments in code</button>
+                </div>
             </p>
         </section>
         <hr class="my-4">
-        <section id="4">
+        <section id="4" class="_ECHO">
             <h3>4 - Afficher les valeurs des varibales</h3>
             <p>
                 Pour afficher la valeur d'une variable j'utilise la méthode <code>echo $maVariable</code>, pour les array j'utilise <code>Print_r($monArray)</code> : <br>
+                <!-- ICI => J'affiche la valeur de mes variables -->
                 <p>
                     <code>echo $name;</code> <br> => <br>
                     <?php echo $name; ?>
@@ -126,10 +135,13 @@
                     <code>echo $isRetired;</code> <br> => <br>
                     <?php echo $isRetired; ?>
                 </p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _ECHO" >Comments in code</button>
+                </div>
             </p>
         </section>
         <hr class="my-4">
-        <section  id="5">
+        <section  id="5" class="_CONCATENER">
             <h3>5 - Concaténer les variables</h3>
             <p>
                 Maintenant j'aimerais afficher le message suivant : <br>
@@ -138,13 +150,17 @@
                     Pour cela, je vais devoir concaténer mes variables comme ceci : <br>
                 </p>
                 <code>
-                    $name ." a ".$age ." ans, il est ".$job.". ".$littleChildrens[1]." et ".$littleChildrens[0]." sont ses petits enfants.";
+                    $name ." a " .$age ." ans, il est " .$job .". " .$littleChildrens[1] ." et " .$littleChildrens[0] ." sont ses petits enfants.";
                 </code>
                 <p> => <br>
+                    <!-- ICI => Je concatène mes variables entre elles à l'aide du signe '.' -->
                     <?php
-                    echo $name . " a " . $age . " ans, il est " . $job . ". " . $littleChildrens[1] . " et " . $littleChildrens[0] . " sont ses petits enfants.";
+                    echo $name ." a " .$age ." ans, il est " .$job . ". " .$littleChildrens[1] ." et " .$littleChildrens[0] ." sont ses petits enfants.";
                     ?>
                 </p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _CONCATENER" >Comments in code</button>
+                </div>
             </p>
         </section>
     </div>

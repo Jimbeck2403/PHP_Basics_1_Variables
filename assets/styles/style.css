@@ -26,10 +26,6 @@ body{
     height: 300px;
 }
 
-.git {
-    font-size: 15px;
-}
-
 #menu {
     position: fixed;
     z-index: 1;
@@ -37,6 +33,32 @@ body{
     top: 50%;
     width: 8em;
     margin-top: -2.5em;
+}
+
+.alert-my-dark {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #0e0e0e;
+    border-color: #c6c8ca;
+}
+
+code {
+    font-size: 87.5%;
+    color: #d72679;
+    word-break: break-word;
+}
+
+.purple {
+    color: #6a38ff;
+}
+
+.red {
+    color: #e40202;
+}
+
+.yellow {
+    color: #e4b702;
 }
 
 @media screen and (max-width: 850px) {
