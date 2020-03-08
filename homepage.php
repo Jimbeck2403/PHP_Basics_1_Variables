@@ -9,7 +9,7 @@
         <a class="dropdown-item" href="#2">Assigner des valeurs</a>
         <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
         <a class="dropdown-item" href="#4">Afficher les valeurs des varibales</a>
-        <a class="dropdown-item" href="#5">Conquaténer les variables entres elles</a>
+        <a class="dropdown-item" href="#5">Concaténer les variables entres elles</a>
         <a class="dropdown-item" href="#6">Ressources</a>
     </div>
 </div>
@@ -130,12 +130,12 @@
         </section>
         <hr class="my-4">
         <section  id="5">
-            <h3>5 - Conquaténer les variables</h3>
+            <h3>5 - Concaténer les variables</h3>
             <p>
                 Maintenant j'aimerais afficher le message suivant : <br>
                 <blockquote>"Rick a 70 ans, il est scientifique. Morty et Summer sont ses petits enfants."</blockquote> 
                 <p>
-                    Pour cela, je vais devoir conquaténer mes variables comme ceci : <br>
+                    Pour cela, je vais devoir concaténer mes variables comme ceci : <br>
                 </p>
                 <code>
                     $name ." a ".$age ." ans, il est ".$job.". ".$littleChildrens[1]." et ".$littleChildrens[0]." sont ses petits enfants.";

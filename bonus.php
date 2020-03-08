@@ -3,6 +3,7 @@
     $secretName = "Pickle Rick";
     $secretPowers = ["Pickle power", "Rat power", "Smarter than the rest of the world"];
     $secretImage = 'assets/images/pickleRick.gif';
+    $secretMessage = "Wubawubawuba !";
 
     if ($secretIsVisible === true) {
 ?>
@@ -23,6 +24,8 @@
                             echo "- " .$secretPowers[$i] .'<br>';
                         }
                     ?>
+                    <br>
+                    <?php echo $secretMessage; ?>
                 </p>
             </div>
         </div>

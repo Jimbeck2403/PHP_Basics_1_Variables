@@ -1,3 +1,7 @@
+<!-- Pour te repérer dans cette page de code, 
+tu peux faire une recherche des mots ETAPE, BONUS, PUSH, EXEMPLE, ICI TON CODE
+pour te deplacer plus facilement sans te perdre -->
+
 <?php include('head.php'); ?>
 
 <div class="dropdown" id="menu">
@@ -8,7 +12,7 @@
         <a class="dropdown-item" href="#1">Nommer les variables</a>
         <a class="dropdown-item" href="#2">Assigner les valeurs / Afficher le résultat des variables</a>
         <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
-        <a class="dropdown-item" href="#4">Conquaténer les variables</a>
+        <a class="dropdown-item" href="#4">Concaténer les variables</a>
         <a class="dropdown-item" href="#bonus">Bonus</a>
         <a class="dropdown-item" href="#push">Pusher mon code</a>
     </div>
@@ -25,7 +29,6 @@
                 <p class="lead">
                     <strong>Mr Meeseeks ou M. Larbin en français, est un personnage particulier. </strong><br>
                     Il va falloir stocker un certain nombre d'info à son sujet : <br>
-
                     - Son identifiant unique -> 3,14 <br>
                     - Couleurs disponibles -> Bleu, Rouge, Vert, Jaune, Violet - (série limitée) <br>
                     - Son temps de vie -> 48 heures <br>
@@ -43,7 +46,7 @@
         <!-- 1ere ETAPE -->
         <div class="col-12" id="1">
             <p>
-                Première étape, nomme les variables dont on a besoin pour stocker toutes les informations du Larbin : <br>
+                Première étape, nomme les variables dont on a besoin pour stocker toutes les informations d Monsieur Larbin : <br>
                 <small>
                     <div class="alert alert-primary" role="alert">
                         Exemple : <br>
@@ -52,32 +55,25 @@
                 </small>
                 <ol>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                     <li>
-                        <code>$
-                            <!-- NOM VARIABLE --></code>
+                        <code>$<!-- NOM VARIABLE --></code>
                     </li>
                 </ol>
             </p>
@@ -103,15 +99,17 @@
                         <code>echo "=> " .$name .'&lt;br&gt;';</code> <br>
                         <!-- EXEMPLE -->
                         <?php
-                        $name = "Rick";
-                        echo "=> " . $name . '<br>';
+                            $name = "Rick";
+                            echo "=> " . $name . '<br>';
                         ?>
                         <!-- / -->
                     </div>
                 </small>
                 <br>
                 <?php
-                // <!-- ICI TON CODE POUR ASSIGNER LES VALEURS AUX VARIABLES :-->
+                // ICI TON CODE 
+                // <!-- REPRENDS LE NOM DE TES VARIABLES ET ASSIGNE LEUR LES VALEURS DE MONSIEUR LARBIN :-->
+                // ------------  Aide toi de l'exemple juste au dessus 🤙 ------------>
                 // ------------  N'oublie pas le point virgule ; 🤙 ------------>
                 ?>
             </p>
@@ -177,7 +175,7 @@
         <hr class="my-4">
         <!-- 4ème ETAPE -->
         <div class="col-12" id="4">
-            Dernère étape, conquatène les variables entre elles afin d'afficher le texte suivant : <br>
+            Dernière étape, concatène les variables entre elles afin d'afficher le texte suivant : <br>
             <div class="font-italic my-3">
                 Le <strong><u>larbin*</u></strong> est une invention de Rick. <br>
                 Les couleurs disponibles sont : <strong><u>Bleu*, Rouge*, Vert*, Jaune*, Violet - (série limitée)* </u></strong>. <br>
@@ -188,6 +186,16 @@
             </div>
             <small>
                 <div class="alert alert-primary" role="alert">
+                <strong>Tips :</strong><br>
+                    Le terme concaténer veut dire que l'on associe les variables entre elles. Par exemple : <br>
+                    J'ai 2 varibales : $direBonjour = "Hello" et $destination = "World". <br>
+                    Je souhaite associer les 2 variables pour afficher "Hello World", pour cela je vais utilser la concaténation. <br>
+                    En PHP, il suffit de placer un point '.' devant la variable à associer : <br>
+                    <code>echo .$direBonjour .$destination;</code> <br> => <br> 
+                    <?php echo $direBonjour = "Hello" .$destination = "World"; ?> <br>
+                    Sauf que mes mots sont collés, j'ajoute donc un un espace entre les 2 comme ceci : <br> <code>echo .$direBonjour ." " .$destination;</code> <br> => <br>
+                    <?php echo $direBonjour = "Hello" ." " .$destination = "World"; ?>  <br>
+                    <hr class="my-2">
                     <strong>Exemple :</strong><br>
                     <code>
                         $name = "Rick";<br>
@@ -199,7 +207,7 @@
                     <?php
                         $name = "Rick";
                         $job = "scientifique";
-                        echo "Salut je suis " . $name . " et je suis " . $job . ".";
+                        echo "Salut je suis " .$name ." et je suis " .$job .".";
                     ?>
                     <!-- / -->
                     <br>
@@ -242,17 +250,19 @@
                         <strong>Tips :</strong><br>
                         - Le personnage caché ne s'affichera que si la variable <code>$secretIsVisible</code> est réiniatlisée à <code>true</code> <br>
                         - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans <code>index.php</code> et <code>exercices.php</code> <br>
+                        - Il y a plusieurs manières d'arriver à afficher le personnage caché. <br>
                         <p class="my-3">
                             <?php
-                            if ($secretIsVisible === false) {
-                                echo "👻";
-                            }
+                                if ($secretIsVisible === false) {
+                                    echo "👻";
+                                }
                             ?>
                         </p>
                     </div>
                 </small>
 
                 <?php
+                    // ICI TON CODE
                     // TROUVE COMMENT AFFICHER LE PERSONNAGE CACHE
                 ?>
 
@@ -262,6 +272,7 @@
             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
+    <!-- PUSH -->
     <div class="jumbotron" id="push">
         <h2 class="display-4">➜ ✅ : git push</h2>
         <hr class="my-4">
