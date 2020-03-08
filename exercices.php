@@ -304,7 +304,6 @@ afin de te deplacer plus facilement sans te perdre
                         }
                         // 3 - On appelle la méthode pour voir ce qu'elle renvoit comme résultat
                         getAlertStock($number);
-                    
                     ?>
                     <br>
                 </p>
