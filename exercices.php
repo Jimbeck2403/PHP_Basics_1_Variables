@@ -108,7 +108,7 @@ afin de te deplacer plus facilement sans te perdre
                             "J'aime coder des mystères &lt;retour à la ligne&gt; parfois même des choses impossibles"
                         </code>
                         <br>
-                        Suivant que j'initialise ma variable avec des "" ou bien des '', PHP ne va pas interprété les choses de la même manière : <br>
+                        Suivant que j'initialise ma variable avec des "" ou bien des '', PHP ne va pas interpréter les choses de la même manière : <br>
                         Je peux écrire : <code>$string = "J'aime coder des choses mystères &lt;br&gt; parfois même des choses impossibles";</code> <br>
                         ou <code>$string = 'j\'aime coder des choses mystères &lt;br&gt; parfois même des choses impossibles';</code> <br>
                         Le \ me permet d'échapper le caractère ' et le &lt;br&gt; de faire le retour à la ligne.
