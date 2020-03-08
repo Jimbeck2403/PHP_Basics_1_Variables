@@ -15,6 +15,7 @@ pour te deplacer plus facilement sans te perdre
         <a class="dropdown-item" href="#2">Assigner les valeurs / Afficher le résultat des variables</a>
         <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
         <a class="dropdown-item" href="#4">Concaténer les variables</a>
+        <a class="dropdown-item" href="#5">Faire des opérations</a>
         <a class="dropdown-item" href="#bonus">Bonus</a>
         <a class="dropdown-item" href="#push">Pusher mon code</a>
     </div>
@@ -178,7 +179,7 @@ pour te deplacer plus facilement sans te perdre
         <!-- 4ème ETAPE -->
         <div class="col-12" id="4">
         <h4 class="display-5">Concaténer les variables :</h4>
-            Dernière étape, concatène les variables entre elles afin d'afficher le texte suivant : <br>
+            Quatrième étape, concatène les variables entre elles afin d'afficher le texte suivant : <br>
             <div class="font-italic my-3">
                 Le <strong><u>larbin*</u></strong> est une invention de Rick. <br>
                 Les couleurs disponibles sont : <strong><u>Bleu*, Rouge*, Vert*, Jaune*, Violet - (série limitée)* </u></strong>. <br>
@@ -229,6 +230,69 @@ pour te deplacer plus facilement sans te perdre
                     
                     ** N'oublie pas de mettre ton code dans des balises PHP 🤙           
                 -->
+                </p>
+            </p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <hr class="my-4">
+        <!-- 5ème ETAPE -->
+        <div class="col-12" id="5">
+        <h4 class="display-5">Faire des opérations :</h4>
+            Cinquième étape, on va aider Rick à chiffrer sa production de larbins : <br>
+            <small>
+                <div class="alert alert-primary" role="alert">
+                <strong>Tips :</strong><br>
+                    Liste des opérateurs disponibles => <br>
+                    <code>
+                        * => multiplier <br>
+                        + => additionner <br> 
+                        - => soustraire <br>
+                        / => diviser <br>   
+                        % => modulo : $a % $b = reste de $a divisé par $b <br>  
+                        ** => exponentielle : $a ** $b = puissance de $a par $b <br>
+                    </code>
+                    <hr class="my-2">
+                    <strong>Exemple :</strong><br>
+                    Si Rick vend 24 larbins identiques à 60 000$, quel est le prix d'un larbin ? <br>
+                    <code>
+                        $total = 60000; <br>
+                        $larbins = 24 <br>
+                        echo $total / $larbins ." $"; <br> => <br>
+                        <!-- EXEMPLE -->
+                        <?php 
+                            $total = 60000;
+                            $larbins = 24;
+                            echo $total / $larbins ." $";
+                        ?>
+                        <!-- / -->
+                    </code>
+                    <br>
+                </div>
+            </small>
+            <p>
+                <p>
+                    Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
+                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <br>
+                    Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
+                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <br>
+                    Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
+                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <br>
+                    Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer et 5 à sa filles, combien lui en restera-t-il ? (tips : utilise le modulo) <br>
+                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <br>
+                    Bonus : Rick voudrait écrire un script qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, comment faire ? <br>
+                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    <br>
                 </p>
             </p>
         </div>
