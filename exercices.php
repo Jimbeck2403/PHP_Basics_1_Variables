@@ -23,7 +23,7 @@ afin de te deplacer plus facilement sans te perdre
 <div class="container my-container">
     <div class="jumbotron">
         <div class="text-right">
-            <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Tous les exercices sont commentés, tu peux d'ors et déjà lire les premiers commentaires à la ligne 1 de exercices.php. Tu as tout ce qu'il faut dans le contenu de ce projet pour réaliser et réussir les exercies. Si tu es bloqué.e, inspire toi du code déjà présent et réadapte le à ton besoin." >Comments in code</button>
+            <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Tous les exercices sont commentés, tu peux d'ors et déjà lire les premiers commentaires à la ligne 1 de exercices.php. Tu as tout ce qu'il faut dans le contenu de ce projet pour réaliser et réussir les exercies. Si tu es bloqué.e, inspire toi du code déjà présent et réadapte le à ton besoin." ><i class="fas fa-comment"></i> Comments in code</button>
         </div>
         <h2 class="display-4">💻 Exercices :</h2>
         <hr class="my-4">
@@ -127,6 +127,7 @@ afin de te deplacer plus facilement sans te perdre
                     </div>
                 </small>
                 <br>
+                <h5 class="display-6">Solution :</h5>
                 <div class="alert alert-my-dark" role="alert">
                     <?php
                         echo "<span class='red'>~</span> _ICI TON CODE PHP";
@@ -160,6 +161,9 @@ afin de te deplacer plus facilement sans te perdre
                         <!-- / -->
                     </div>
                 </small>
+                <hr class="my-3">
+                <h5 class="display-6">Solution :</h5>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -170,6 +174,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -179,6 +184,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -188,6 +194,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -197,6 +204,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -206,6 +214,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -215,6 +224,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <p>
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
@@ -224,6 +234,7 @@ afin de te deplacer plus facilement sans te perdre
                         ?>
                     </div>
                 </p>
+                <hr class="my-3">
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -280,10 +291,12 @@ afin de te deplacer plus facilement sans te perdre
                     <br>
                 </div>
             </small>
+            <hr class="my-3">
+            <h5 class="display-6">Solution :</h5>
             <p>
                 <p>
                     <div class="alert alert-my-dark" role="alert" id="4_Etape">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 4_Etape">Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 4_Etape"><i class="fas fa-comment"></i> Comments in code</button>
                         <!-- _ICI TON CODE POUR AFFICHER LE TEXTE : 
                             "   Le larbin est une invention de Rick.
                                 Les couleurs disponibles sont : Bleu, Rouge, Vert, Jaune, Violet - (série limitée).
@@ -343,39 +356,46 @@ afin de te deplacer plus facilement sans te perdre
                     <br>
                 </div>
             </small>
+            <hr class="my-3">
+            <h5 class="display-6">Solution :</h5>
+            <hr class="my-3">
             <p>
                 <p>
-                    - Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
+                    <p>- Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? </p>
                     <div class="alert alert-my-dark" role="alert">
                         <span class='red'>~</span> _ICI TON CODE PHP
                         <!-- _ICI TON CODE --> 
                         <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     </div>
+                    <hr class="my-3">
                     <br>
-                    - Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
+                    <p>- Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? </p>
                     <div class="alert alert-my-dark" role="alert">
                         <span class='red'>~</span> _ICI TON CODE PHP
                         <!-- _ICI TON CODE --> 
                         <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     </div>
+                    <hr class="my-3">
                     <br>
-                    - Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
+                    <p>- Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? </p>
                     <div class="alert alert-my-dark" role="alert">
                         <span class='red'>~</span> _ICI TON CODE PHP
                         <!-- _ICI TON CODE --> 
                         <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     </div>
+                    <hr class="my-3">
                     <br>
-                    - Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer, 5 à sa fille et le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo) <br>
+                    <p>- Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer, 5 à sa fille et le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo)</p>
                     <div class="alert alert-my-dark" role="alert">
                         <span class='red'>~</span> _ICI TON CODE PHP
                         <!-- _ICI TON CODE --> 
                         <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     </div>
+                    <hr class="my-3">
                     <br>
-                    - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :<br>
+                    <p>- Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :</p>
                     <div class="alert alert-my-dark" role="alert" id="5_Etape">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape">Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape"><i class="fas fa-comment"></i> Comments in code</button>
                         <span class='red'>~</span> _ICI TON CODE PHP <br>
                         <?php 
                             // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
@@ -393,6 +413,7 @@ afin de te deplacer plus facilement sans te perdre
                             getAlertStock($number);
                         ?>  
                     </div>
+                    <hr class="my-3">
                     <br>
                 </p>
                 <div class="progress">
@@ -426,7 +447,7 @@ afin de te deplacer plus facilement sans te perdre
             </div>
             <div class="col-12">
                 <div class="alert alert-my-dark" role="alert" id="_SUPERBONUS">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Code commenter dans exercices.php mot clé : SUPERBONUS">Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Code commenter dans exercices.php mot clé : SUPERBONUS"><i class="fas fa-comment"></i> Comments in code</button>
                     <?php
                         // _SUPERBONUS
                         // Dans un premier temps, testons si la variable $secretIsVisible existe :

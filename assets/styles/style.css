@@ -17,6 +17,16 @@ body{
     background-color: #e9ecef;
 }
 
+.nav-link-custom, 
+.navbar-brand-custom {
+    color:  #0e0e0e!important;
+}
+
+.nav-link-custom:hover,
+.navbar-brand-custom:hover {
+    color:  #dc3545!important;
+}
+
 .list {
     list-style:none;
 }
@@ -45,7 +55,7 @@ body{
 
 code {
     font-size: 87.5%;
-    color: #d72679;
+    color: #dc3545;
     word-break: break-word;
 }
 
@@ -54,7 +64,7 @@ code {
 }
 
 .red {
-    color: #e40202;
+    color: #dc3545;
 }
 
 .yellow {
@@ -73,5 +83,9 @@ code {
         top: 11%;
         width: 8em;
         margin-top: -2.5em;
+    }
+    .iframe {
+        width: 390px;
+        height: 190px;
     }
 }

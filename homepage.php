@@ -59,7 +59,7 @@
                     <li><code>$isRetired = true;</code></li>
                 </ul>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _PHP" >Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _PHP" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
                 <!-- ICI => J'assigne une valeur à chaque variable : -->
                 <div id="_PHP">
@@ -100,7 +100,7 @@
                     <?php echo gettype($isRetired); ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _TYPE" >Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _TYPE" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>
@@ -136,7 +136,7 @@
                     <?php echo $isRetired; ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _ECHO" >Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _ECHO" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>
@@ -159,7 +159,7 @@
                     ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _CONCATENER" >Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _CONCATENER" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>

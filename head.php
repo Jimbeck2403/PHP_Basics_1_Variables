@@ -32,17 +32,17 @@
 <body>
     <?php $secretIsVisible = false; ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-grey fixed-top">
-        <a class="navbar-brand" href="index.php">PHP Basics</a>
+        <a class="navbar-brand navbar-brand-custom" href="index.php"><span class='red'>~</span> README.md</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href='homepage.php'>Home</a>
+                    <a class="nav-link nav-link-custom" href='homepage.php'><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="exercices.php">Exercices</a>
+                    <a class="nav-link nav-link-custom" href="exercices.php"><i class="fas fa-code"></i> Exercices</a>
                 </li>
             </ul>
         </div>
