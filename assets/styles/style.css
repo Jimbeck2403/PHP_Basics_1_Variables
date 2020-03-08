@@ -53,6 +53,36 @@ body{
     border-color: #c6c8ca;
 }
 
+.dropdown-menu-custom {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 15px !important;
+    background-color: #0e0e0e !important;
+}
+
+.dropdown-menu-custom .dropdown-item {
+    color: #ffffff !important;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #dc3545;
+}
+
+.popover-header {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 15px !important;
+    background-color: #0e0e0e !important;
+    color: #ffffff !important;
+}
+
+.popover-body {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 15px !important;
+    background-color: #0e0e0e !important;
+    color: #ffffff !important;
+}
+
 code {
     font-size: 87.5%;
     color: #dc3545;

@@ -4,13 +4,13 @@
     <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-chevron-circle-down"></i>
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#1">Nommer les variables</a>
-        <a class="dropdown-item" href="#2">Assigner des valeurs</a>
-        <a class="dropdown-item" href="#3">Vérifier le type des variables</a>
-        <a class="dropdown-item" href="#4">Afficher les valeurs des varibales</a>
-        <a class="dropdown-item" href="#5">Concaténer les variables entres elles</a>
-        <a class="dropdown-item" href="#6">Ressources</a>
+    <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#1"><span class='red'>~</span> Nommer les variables</a>
+        <a class="dropdown-item" href="#2"><span class='red'>~</span> Assigner des valeurs</a>
+        <a class="dropdown-item" href="#3"><span class='red'>~</span> Vérifier le type des variables</a>
+        <a class="dropdown-item" href="#4"><span class='red'>~</span> Afficher les valeurs des varibales</a>
+        <a class="dropdown-item" href="#5"><span class='red'>~</span> Concaténer les variables entres elles</a>
+        <a class="dropdown-item" href="#6"><span class='red'>~</span> Ressources</a>
     </div>
 </div>
 <div class="container my-container">
@@ -59,7 +59,7 @@
                     <li><code>$isRetired = true;</code></li>
                 </ul>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _PHP" ><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rends toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _PHP"><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
                 <!-- ICI => J'assigne une valeur à chaque variable : -->
                 <div id="_PHP">
@@ -100,7 +100,7 @@
                     <?php echo gettype($isRetired); ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _TYPE" ><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rends toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _TYPE" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>
@@ -136,7 +136,7 @@
                     <?php echo $isRetired; ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _ECHO" ><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rends toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _ECHO" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>
@@ -159,7 +159,7 @@
                     ?>
                 </p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rend toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _CONCATENER" ><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Quelque que chose en PHP se passe à cet endroit du code. Pour aller voir, rends toi dans ton IDE, dans le fichier homepage.php et tape une recherche du mot clé = _CONCATENER" ><i class="fas fa-comment"></i> Comments in code</button>
                 </div>
             </p>
         </section>

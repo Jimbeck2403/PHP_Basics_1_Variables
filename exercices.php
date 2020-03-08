@@ -10,20 +10,20 @@ afin de te deplacer plus facilement sans te perdre
     <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-chevron-circle-down"></i>
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#ETAPE_1">Nommer les variables</a>
-        <a class="dropdown-item" href="#ETAPE_2">Assigner les valeurs / Afficher le résultat des variables</a>
-        <a class="dropdown-item" href="#ETAPE_3">Vérifier le type des variables</a>
-        <a class="dropdown-item" href="#ETAPE_4">Concaténer les variables</a>
-        <a class="dropdown-item" href="#ETAPE_5">Faire des opérations</a>
-        <a class="dropdown-item" href="#_SUPERBONUS">SUPERBONUS</a>
-        <a class="dropdown-item" href="#_PUSH">Pusher mon code</a>
+    <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#ETAPE_1"><span class='red'>~</span> Nommer les variables</a>
+        <a class="dropdown-item" href="#ETAPE_2"><span class='red'>~</span> Assigner les valeurs / Afficher le résultat des variables</a>
+        <a class="dropdown-item" href="#ETAPE_3"><span class='red'>~</span> Vérifier le type des variables</a>
+        <a class="dropdown-item" href="#ETAPE_4"><span class='red'>~</span> Concaténer les variables</a>
+        <a class="dropdown-item" href="#ETAPE_5"><span class='red'>~</span> Faire des opérations</a>
+        <a class="dropdown-item" href="#_SUPERBONUS"><span class='red'>~</span> SUPERBONUS</a>
+        <a class="dropdown-item" href="#_PUSH"><span class='red'>~</span> Pusher mon code</a>
     </div>
 </div>
 <div class="container my-container">
     <div class="jumbotron">
         <div class="text-right">
-            <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Tous les exercices sont commentés, tu peux d'ors et déjà lire les premiers commentaires à la ligne 1 de exercices.php. Tu as tout ce qu'il faut dans le contenu de ce projet pour réaliser et réussir les exercies. Si tu es bloqué.e, inspire toi du code déjà présent et réadapte le à ton besoin." ><i class="fas fa-comment"></i> Comments in code</button>
+            <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Tous les exercices sont commentés, tu peux d'ors et déjà lire les premiers commentaires à la ligne 1 de exercices.php. Tu as tout ce qu'il faut dans le contenu de ce projet pour réaliser et réussir les exercies. Si tu es bloqué.e, inspire toi du code déjà présent et réadapte le à ton besoin." ><i class="fas fa-comment"></i> Comments in code</button>
         </div>
         <h2 class="display-4">💻 Exercices :</h2>
         <hr class="my-4">
@@ -296,7 +296,7 @@ afin de te deplacer plus facilement sans te perdre
             <p>
                 <p>
                     <div class="alert alert-my-dark" role="alert" id="4_Etape">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 4_Etape"><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 4_Etape"><i class="fas fa-comment"></i> Comments in code</button>
                         <!-- _ICI TON CODE POUR AFFICHER LE TEXTE : 
                             "   Le larbin est une invention de Rick.
                                 Les couleurs disponibles sont : Bleu, Rouge, Vert, Jaune, Violet - (série limitée).
@@ -395,7 +395,7 @@ afin de te deplacer plus facilement sans te perdre
                     <br>
                     <p>- Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :</p>
                     <div class="alert alert-my-dark" role="alert" id="5_Etape">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape"><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape"><i class="fas fa-comment"></i> Comments in code</button>
                         <span class='red'>~</span> _ICI TON CODE PHP <br>
                         <?php 
                             // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
@@ -440,14 +440,14 @@ afin de te deplacer plus facilement sans te perdre
                     <div class="alert alert-primary" role="alert">
                         <strong>Tips :</strong><br>
                         - Le personnage caché ne s'affichera que si la variable <code>$secretIsVisible</code> est réiniatlisée à <code>true</code> <br>
-                        - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans <code>index.php</code> et <code>exercices.php</code> <br>
+                        - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans <code>homepage.php</code> et <code>exercices.php</code> <br>
                         - Il y a plusieurs manières d'arriver à afficher le personnage caché. <br>
                     </div>
                 </small>
             </div>
             <div class="col-12">
                 <div class="alert alert-my-dark" role="alert" id="_SUPERBONUS">
-                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Comments in code" data-content="Code commenter dans exercices.php mot clé : SUPERBONUS"><i class="fas fa-comment"></i> Comments in code</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Code commenter dans exercices.php mot clé : SUPERBONUS"><i class="fas fa-comment"></i> Comments in code</button>
                     <?php
                         // _SUPERBONUS
                         // Dans un premier temps, testons si la variable $secretIsVisible existe :
