@@ -36,7 +36,7 @@
         <section id="1">
             <h3>1 - Nommer les variables</h3>
             <p>
-                La première étape consiste à nommer mes variables en respectant les conventions de nommage (lire le <a href="readme.php">README</a> pour revoir les conventions de nommage): <br>
+                La première étape consiste à nommer mes variables en respectant les conventions de nommage (lire le <a href="index.php">README</a> pour revoir les conventions de nommage): <br>
                 <ul class="list">
                     <li><code>$name</code></li>
                     <li><code>$age</code></li>
@@ -156,6 +156,7 @@
                 <ol>
                     <li><a href="https://www.grafikart.fr/tutoriels/variables-php-1115" target="_blank">Grafikart - Les Variables</a></li>
                     <li><a href="https://www.php.net/manual/fr/language.variables.basics.php" target="_blank">Documentation Officielle PHP - Les Variables</a></li>
+                    <li><a href="https://www.php.net/manual/fr/language.operators.string.php" target="_blank" rel="noopener noreferrer">Documentation Officielle PHP - Concaténation - Opérateur de chaînes</a></li>
                 </ol>
             </div>
             <div class="col-lg-8 col-sm-12 my-5">

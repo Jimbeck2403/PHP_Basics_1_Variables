@@ -2,11 +2,14 @@
     $secretIsVisible = false;
     $secretName = "Pickle Rick";
     $secretPowers = ["Pickle power", "Rat power", "Smarter than the rest of the world"];
-    $secretImage = 'assets/images/pickleRick.gif';
+    $secretImage = 'assets/images/tenor.gif';
     $secretMessage = "Wubawubawuba !";
 
     if ($secretIsVisible === true) {
 ?>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done Wilder !</h4>
+        </div>
         <div class="card">
             <img 
                 src="<?php echo $secretImage?>" 

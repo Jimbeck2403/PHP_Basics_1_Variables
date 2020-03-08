@@ -1,6 +1,8 @@
-<!-- Pour te repérer dans cette page de code, 
-tu peux faire une recherche des mots ETAPE, BONUS, PUSH, EXEMPLE, ICI TON CODE
-pour te deplacer plus facilement sans te perdre -->
+<!----------------------------------------------------------------------------------------------- 
+Pour te repérer dans cette page de code, tu peux faire une recherche des mots 
+ETAPE, BONUS, PUSH, EXEMPLE, ICI TON CODE
+pour te deplacer plus facilement sans te perdre 
+------------------------------------------------------------------------------------------------->
 
 <?php include('head.php'); ?>
 
@@ -193,7 +195,7 @@ pour te deplacer plus facilement sans te perdre -->
                     En PHP, il suffit de placer un point '.' devant la variable à associer : <br>
                     <code>echo .$direBonjour .$destination;</code> <br> => <br> 
                     <?php echo $direBonjour = "Hello" .$destination = "World"; ?> <br>
-                    Sauf que mes mots sont collés, j'ajoute donc un un espace entre les 2 comme ceci : <br> <code>echo .$direBonjour ." " .$destination;</code> <br> => <br>
+                    Sauf que mes mots sont collés alors je concatène un espace entre les 2 comme ceci : <br> <code>echo .$direBonjour ." " .$destination;</code> <br> => <br>
                     <?php echo $direBonjour = "Hello" ." " .$destination = "World"; ?>  <br>
                     <hr class="my-2">
                     <strong>Exemple :</strong><br>
@@ -251,21 +253,17 @@ pour te deplacer plus facilement sans te perdre -->
                         - Le personnage caché ne s'affichera que si la variable <code>$secretIsVisible</code> est réiniatlisée à <code>true</code> <br>
                         - Observe comment j'ai découpé mon code, notamment avec les fichiers <code>head.php</code> et <code>footer.php</code> et comment je les utilise dans <code>index.php</code> et <code>exercices.php</code> <br>
                         - Il y a plusieurs manières d'arriver à afficher le personnage caché. <br>
-                        <p class="my-3">
-                            <?php
-                                if ($secretIsVisible === false) {
-                                    echo "👻";
-                                }
-                            ?>
-                        </p>
                     </div>
                 </small>
-
+            </div>
+            <div class="col-12">
                 <?php
+                    if ($secretIsVisible === false) {
+                        echo "👻";
+                    }
                     // ICI TON CODE
                     // TROUVE COMMENT AFFICHER LE PERSONNAGE CACHE
                 ?>
-
             </div>
         </div>
         <div class="progress">
@@ -288,7 +286,7 @@ pour te deplacer plus facilement sans te perdre -->
             </div>
             <div class="col-12">
                 <div class="text-center my-4">
-                    <img src="assets/images/tenor.gif" alt="thanks noob noob" class="tenor">
+                    <img src="assets/images/noob.gif" alt="thanks noob noob" class="noob">
                 </div>
             </div>
         </div>
