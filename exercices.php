@@ -289,9 +289,23 @@ afin de te deplacer plus facilement sans te perdre
                     <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, comment faire ? <br>
-                    <!-- ICI TON CODE --> 
-                    <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                    - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :<br>
+                    <?php 
+                        // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
+                        // 1 - On initialise une variable $number avec une valeur inférieur ou égale à 15, par exemple on peut tester avec 12.
+                        $number = 12;
+                        // 2 - On ecrit la fonction à laquelle on donne un nom intelligible sur ce qu'elle fait, 
+                        // cette méthode prend comme paramètre un nombre qui sera tester : $number
+                        function getAlertStock($number)
+                        {
+                            // <!-- ICI TON CODE --> 
+                            // Tu peux décommenter la ligne du dessous pour actionner la méthode 
+                            // echo "Actuellement " .$number ." de larbins en stock"; 
+                        }
+                        // 3 - On appelle la méthode pour voir ce qu'elle renvoit comme résultat
+                        getAlertStock($number);
+                    
+                    ?>
                     <br>
                 </p>
             </p>
