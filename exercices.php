@@ -1,7 +1,7 @@
 <!----------------------------------------------------------------------------------------------- 
-Pour te repérer dans cette page de code, tu peux faire une recherche des mots 
+Pour te repérer dans cette page de code, tu peux faire une recherche des mots clés 
 ETAPE, BONUS, PUSH, EXEMPLE, ICI TON CODE
-pour te deplacer plus facilement sans te perdre 
+afin de te deplacer plus facilement sans te perdre 
 ------------------------------------------------------------------------------------------------->
 
 <?php include('head.php'); ?>
@@ -226,7 +226,7 @@ pour te deplacer plus facilement sans te perdre
                     Vit environ 48 heures.
                     S'évapore une fois qu'il a réalisé ton souhait.
                     1 souhait par larbin.
-                    Photo non contractuelle.
+                    Photo non contractuelle**.
                     
                     ** N'oublie pas de mettre ton code dans des balises PHP 🤙           
                 -->
@@ -274,23 +274,23 @@ pour te deplacer plus facilement sans te perdre
             <p>
                 <p>
                     - Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? <br>
-                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
                     - Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? <br>
-                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
                     - Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? <br>
-                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
-                    - Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer et 5 à sa fille, le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo) <br>
-                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    - Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer, 5 à sa fille et le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo) <br>
+                    <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
                     - Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, comment faire ? <br>
-                    <!-- ICI TON CODE POUR AFFICHER LE RESULTAT : --> 
+                    <!-- ICI TON CODE --> 
                     <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
                     <br>
                 </p>
