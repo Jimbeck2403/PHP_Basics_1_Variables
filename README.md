@@ -32,6 +32,7 @@ $rickName => BON <br>
 ## Exercices : 
 - cloner le projet -> créer une branche en la nommant par ton prénom
 - ouvrir le projet en entier dans un IDE
-- lancer le projet sur le serveur local
+- lancer le projet sur le serveur local (php -S localhost:8000
+)
 - lire la homepage
 - faire les exercices de la page exercices en suivant les consignes
